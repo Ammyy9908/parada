@@ -57,8 +57,8 @@ function index() {
   return (
     <footer className="border-t border-gray-200">
       <Container>
-        <div className="footer_top flex items-start justify-between">
-          <div className="footer_top__left flex items-start gap-32">
+        <div className="footer_top flex sm:flex-row flex-col gap-12 items-start justify-between">
+          <div className="footer_top__left flex sm:flex-row flex-col items-start gap-12 sm:gap-32">
             <div className="footer_top__left__links">
               <p className="font-bold uppercase text-sm">
                 {footer.top.links[0].title}
@@ -127,7 +127,7 @@ function index() {
           </div>
         </div>
         <div className="footer__bottom w-full mt-6">
-          <div className="footer__bottom__links flex items-center gap-3 w-full justify-between">
+          <div className="footer__bottom__links flex sm:flex-row flex-col items-start sm:items-center gap-3 w-full justify-between">
             <p>
               <a href="#">
                 <span className="text-sm">{footer.bottom.copyright}</span>
