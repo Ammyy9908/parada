@@ -7,8 +7,14 @@ import Collection from "../components/Collection";
 import GalleryBanner from "../components/GalleryBanner";
 import BagsContainer from "../components/BagsContainer";
 import Footer from "../components/Footer";
+import { useSelector } from "react-redux";
+import { selectNav } from "../features/navSlice";
+import HolidaySlider from "../components/HolidaySlider";
 
 export default function Home() {
+  const navbar = useSelector(selectNav);
+
+  console.log("NAVBAR", navbar);
   return (
     <div>
       <Head>
@@ -63,6 +69,7 @@ export default function Home() {
         </div>
         <GalleryBanner />
         <BagsContainer />
+        <HolidaySlider />
       </Container>
       <Footer />
     </div>
