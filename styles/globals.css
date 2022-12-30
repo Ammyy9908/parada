@@ -28,3 +28,39 @@ a {
     background: black;
   }
 }
+
+.gift_btn {
+  position: relative;
+  background-color: transparent;
+  width: 130px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+.gift_btn::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+.gift_btn:hover::before {
+  height: 100%;
+}
+
+.gift_btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+.gift_btn:hover {
+  color: #000;
+}
