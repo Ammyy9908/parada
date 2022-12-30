@@ -19,7 +19,7 @@ function index() {
   return (
     <div className="rounded group h-[668px] relative bg-black/90">
       <video
-        src="https://www.prada.com/content/dam/pradanux/home_page/2022/11/co_gifting/hero_v3/loop.mp4/_jcr_content/renditions/cq5dam.video.pradanux-large.1920.1080.mp4"
+        src="/gift_3.mp4"
         loop
         autoPlay="autoplay"
         className="rounded absolute top-0 left-0 w-full h-full object-cover"
