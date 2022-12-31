@@ -29,38 +29,50 @@ a {
   }
 }
 
-.gift_btn {
+.gift_btn,
+.discover_btn_black {
   position: relative;
   background-color: transparent;
-  width: 130px;
+  padding: 12px;
   height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 3;
 }
-.gift_btn::before {
+
+.gift_btn::before,
+.discover_btn_black::before {
   content: "";
   width: 100%;
   position: absolute;
   height: 2px;
-  background-color: #fff;
+
   bottom: 0;
   left: 0;
   transition: all 0.3s ease-in-out;
   z-index: 2;
 }
-.gift_btn:hover::before {
+.gift_btn::before {
+  background-color: #fff;
+}
+.discover_btn_black::before {
+  background-color: #000;
+}
+.gift_btn:hover::before,
+.discover_btn_black:hover::before {
   height: 100%;
 }
 
-.gift_btn span {
+.gift_btn span,
+.discover_btn_black span {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
   z-index: 5;
 }
 .gift_btn:hover {
   color: #000;
+}
+.discover_btn_black:hover {
+  color: #fff;
 }
