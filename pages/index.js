@@ -34,9 +34,9 @@ export default function Home() {
 
               <a
                 href="#"
-                className="uppercase px-2 py-1 bg-white rounded-full font-bold h-[32px] flex items-center justify-center"
+                className="discover_btn_black uppercase px-2 py-1 bg-white w-[110px] font-bold h-[32px] flex items-center justify-center"
               >
-                Discover
+                <span>Discover</span>
               </a>
             </div>
             <img
@@ -54,9 +54,9 @@ export default function Home() {
 
               <a
                 href="#"
-                className="uppercase px-2 py-1 bg-white rounded-full font-bold h-[32px] flex items-center justify-center"
+                className="discover_btn_black uppercase  py-1 bg-white w-[110px] font-bold h-[32px] flex items-center justify-center"
               >
-                Discover
+                <span>Discover</span>
               </a>
             </div>
             <img

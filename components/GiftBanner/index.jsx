@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaPause, FaPlay } from "react-icons/fa";
 
@@ -17,7 +18,7 @@ function index() {
     setPlayed(false);
   };
   return (
-    <div className="rounded group h-[668px] relative bg-black/90">
+    <div className="rounded group h-[668px] relative bg-black/90 ">
       <video
         src="/gift_3.mp4"
         loop
@@ -28,12 +29,12 @@ function index() {
       <div className="video-banner-content text-center absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-12 text-white ">
         <h1 className="text-5xl font-bold">Gifts</h1>
         <div className="mt-3 flex gap-2 items-center">
-          <a href="#" className="gift_btn font-bold">
+          <Link href="/womens/gift" className="gift_btn font-bold w-[110px]">
             <span>For Her</span>
-          </a>
-          <a href="#" className="gift_btn font-bold">
+          </Link>
+          <Link href="/mens/gift" className="gift_btn font-bold w-[110px]">
             <span>For Him</span>
-          </a>
+          </Link>
         </div>
       </div>
 
